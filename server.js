@@ -24,3 +24,5 @@ mongoose.connect(process.env.REACT_APP_MONGODB_CONNECTION_STRING,{
 app.use('/users', require('./routes/userRouter'));
 app.use('/todos', require('./routes/todoRouter'));
 app.use('/expense', require('./routes/expenseRouter'));
+
+// mongodb://localhost:27017/productivitymanager

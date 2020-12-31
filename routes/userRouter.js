@@ -44,7 +44,7 @@ router.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) {
-            return res.status(400).json({ msg: "Not all fields has been filled!" });
+            return res.status(400).json({ msg: "Not all fields have been filled!" });
         }
         const user = await User.findOne({ email: email });
         if (!user) {
